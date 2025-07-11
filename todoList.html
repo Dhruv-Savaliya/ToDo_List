@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Add Task Box -->
+        <div class="task-input-box">
+            <form class="todo-form" id="form" autocomplete="off">
+                <input type="text" id="todo-text" class="todo-text" placeholder="Enter your task..." required />
+                <button type="button" id="todo-btn" class="todo-btn" onclick="addFunction()">Add</button>
+            </form>
+        </div>
+
+        <!-- Task List Box -->
+        <div class="task-list-box">
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

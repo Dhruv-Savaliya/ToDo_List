@@ -1,0 +1,133 @@
+/* === Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Body === */
+body {
+    background: linear-gradient(135deg, #8f4ffe, #fa6cff);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+}
+
+/* === Wrapper to stack input + list === */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 480px;
+}
+
+/* === Add Task Box === */
+.task-input-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-text {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.todo-btn {
+    background: #a06bfa;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.todo-btn:hover {
+    background: #8e5dec;
+}
+
+/* === Task List Box === */
+.task-list-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* === Task List Items === */
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+
+#todo-list li:last-child {
+    border-bottom: none;
+}
+
+#todo-list li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* === Button Group === */
+.btn-group {
+    display: flex;
+    gap: 6px;
+}
+
+/* === Edit Button (Hidden on default) === */
+.edit-btn {
+    background: #e9e0ff;
+    color: #6c5ce7;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.edit-btn:hover {
+    background: #d8ccff;
+}
+
+/* === Delete Button === */
+.delete-btn {
+    background: #f0e5ff;
+    color: #a06bfa;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #e3d5ff;
+}
